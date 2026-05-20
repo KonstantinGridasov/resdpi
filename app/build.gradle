@@ -4,8 +4,8 @@ plugins {
 
 android {
     namespace 'com.gkreduction.resdpi'
-    compileSdk = 35 // Укажите вашу версию SDK
-
+    compileSdk = 35 
+    resourcePrefix = "reslib_"
     defaultConfig {
         minSdk = 24
     }
