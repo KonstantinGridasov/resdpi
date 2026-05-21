@@ -6,7 +6,7 @@ plugins {
 android {
     namespace 'com.gkreduction.resdpi'
     compileSdk = 35
-    resourcePrefix = "reslib_"
+    resourcePrefix = "lib_"
     defaultConfig {
         minSdk = 24
     }
@@ -26,7 +26,7 @@ afterEvaluate {
 //                from components.release
                 groupId = 'com.github.KonstantinGridasov'
                 artifactId = 'resdpi'
-                version = '1.0.0'
+                version = '2.0.0'
             }
         }
     }
