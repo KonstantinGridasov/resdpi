@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.gkreduction.resdpi'
+    namespace 'com.github.konstantingridasov.resdpi'
     compileSdk = 35
     resourcePrefix = "lib_"
     defaultConfig {
@@ -13,6 +13,11 @@ android {
 
     buildTypes {
         release {
+        }
+    }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar() 
         }
     }
 }
@@ -26,7 +31,7 @@ afterEvaluate {
 //                from components.release
                 groupId = 'com.github.KonstantinGridasov'
                 artifactId = 'resdpi'
-                version = '2.0.0'
+                version = '2.0.1'
             }
         }
     }
